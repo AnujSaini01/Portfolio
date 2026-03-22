@@ -1,0 +1,109 @@
+<style>
+    :root {
+        --primary-text: #202124;
+        --secondary-text: #5f6368;
+        --accent: #1a73e8;
+        --border: #dadce0;
+    }
+
+    * { box-sizing: border-box; }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.4;
+        color: var(--primary-text);
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* THE FIX: Removes browser headers/footers (time, date, filename) */
+    @page {
+        margin: 0;
+    }
+
+    .resume-page {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 40px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        min-height: 297mm; /* Standard A4 Height */
+    }
+
+    header {
+        text-align: center;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+
+    h1 { margin: 0; font-size: 28px; color: var(--primary-text); text-transform: uppercase; letter-spacing: 1px; }
+    
+    .contact-info {
+        margin-top: 8px;
+        font-size: 14px;
+        color: var(--secondary-text);
+    }
+
+    .contact-info span { margin: 0 10px; }
+
+    section { margin-bottom: 20px; }
+
+    h2 {
+        font-size: 16px;
+        color: var(--accent);
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 3px;
+        margin-bottom: 10px;
+    }
+
+    .item { margin-bottom: 15px; }
+    .item-header { display: flex; justify-content: space-between; font-weight: bold; }
+    .location-date { color: var(--secondary-text); font-weight: normal; font-size: 13px; }
+
+    .sub-header { font-style: italic; color: var(--secondary-text); font-size: 14px; margin-bottom: 5px; }
+
+    ul { margin: 5px 0 0 20px; padding: 0; }
+    li { font-size: 13.5px; margin-bottom: 4px; }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .skill-cat { font-size: 13.5px; }
+    .skill-cat b { color: #333; }
+
+    /* PRINT STYLES */
+    @media print {
+        body { 
+            background: white; 
+            padding: 0; 
+            margin: 0;
+        }
+        .resume-page { 
+            box-shadow: none; 
+            padding: 15mm; /* Professional margin for PDF */
+            width: 100%;
+            max-width: none;
+        }
+        .print-btn { display: none; }
+    }
+
+    .print-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background: var(--accent);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        z-index: 100;
+    }
+</style>
