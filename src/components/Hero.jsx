@@ -100,7 +100,7 @@ const Hero = () => {
             PLACE YOUR RESUME.pdf in 'public' folder and rename it to 'Anuj_Saini_Resume.pdf' 
           */}
           <a
-            href="https://drive.google.com/file/d/16GFcX41Kipzn97A91Nl0o1Fl2tii5XEi/view?usp=sharing"
+            href="https://drive.google.com/file/d/1spapvTBK3tTWCI94Dk6GnP2NlSsRfEP4/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-100 font-bold rounded-xl flex items-center justify-center gap-2 transition-all"
