@@ -9,8 +9,8 @@ const Projects = () => {
       description:
         "An advanced AI-powered platform designed to simulate real-world technical interviews, providing instant feedback and performance analytics. Breaking the barriers between preparation and performance.",
       tags: ["React", "Node.js", "Gemini AI", "Tailwind"],
-      link: "#",
-      github: "#",
+      link: "https://interview-ai-agent-mauve.vercel.app/",
+      github: "https://github.com/AnujSaini01/Portfolio",
       image:
         "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
     },
@@ -76,13 +76,19 @@ const Projects = () => {
 
                 <div className="flex gap-6">
                   <a
-                    href={https://interview-ai-agent-mauve.vercel.app/}
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Open Live Demo for ${project.title} in a new tab`}
                     className="flex items-center gap-2 text-white hover:text-emerald-400 font-bold transition-colors"
                   >
                     Live Demo <ExternalLink size={18} />
                   </a>
                   <a
-                    href={https://github.com/AnujSaini01/Portfolio}
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Open GitHub repository for ${project.title} in a new tab`}
                     className="flex items-center gap-2 text-slate-400 hover:text-white font-bold transition-colors"
                   >
                     GitHub <Github size={18} />
