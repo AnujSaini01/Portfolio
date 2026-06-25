@@ -76,13 +76,13 @@ const Projects = () => {
 
                 <div className="flex gap-6">
                   <a
-                    href={project.link}
+                    href={https://interview-ai-agent-mauve.vercel.app/}
                     className="flex items-center gap-2 text-white hover:text-emerald-400 font-bold transition-colors"
                   >
                     Live Demo <ExternalLink size={18} />
                   </a>
                   <a
-                    href={project.github}
+                    href={https://github.com/AnujSaini01/Portfolio}
                     className="flex items-center gap-2 text-slate-400 hover:text-white font-bold transition-colors"
                   >
                     GitHub <Github size={18} />
