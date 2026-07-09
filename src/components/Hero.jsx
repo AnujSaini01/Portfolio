@@ -96,11 +96,8 @@ const Hero = () => {
               className="group-hover:translate-x-1 transition-transform"
             />
           </a>
-          {/* 
-            PLACE YOUR RESUME.pdf in 'public' folder and rename it to 'Anuj_Saini_Resume.pdf' 
-          */}
           <a
-            href="https://drive.google.com/file/d/13dtPYw91xDCKkgjP6M6hCd2a28m1TXIW/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1iUUNvzTG7ByX5jlzaB7ublRfNG-2AJ7f/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-100 font-bold rounded-xl flex items-center justify-center gap-2 transition-all"
